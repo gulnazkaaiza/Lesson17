@@ -1,7 +1,6 @@
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Library implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -12,7 +11,8 @@ public class Library implements Serializable {
         this.books = new ArrayList<>();
     }
 
-    public Library(List<Book> books) {
+    public Library(List<Book> books)
+    {
         this.books = books;
     }
 
@@ -22,6 +22,7 @@ public class Library implements Serializable {
 
 
     public List<Book> getBooks() {
+
         return books;
     }
 
