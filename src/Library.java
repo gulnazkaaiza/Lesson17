@@ -8,6 +8,7 @@ public class Library implements Serializable {
     List<Book> books;
 
     public Library() {
+
         this.books = new ArrayList<>();
     }
 
@@ -19,30 +20,13 @@ public class Library implements Serializable {
         books.add(book);
     }
 
-    public static Book addBook(Scanner sc) {
-            System.out.println("Введите название книги");
-            String title = sc.next();
-            System.out.println("Введите автора книги");
-            String author = sc.next();
-            int bookReleaseYear = 0;
-            while (true) {
-                try {
-                    System.out.println("Введите год издания");
-                    bookReleaseYear = Integer.parseInt(sc.next());
-                    break;
-                } catch (NumberFormatException e) {
-                    System.out.println("Введен не год, введите год");
-                }
-            }
-
-            return new Book(title, author, bookReleaseYear);
-        }
 
     public List<Book> getBooks() {
         return books;
     }
 
     public void setBooks(List<Book> books) {
+
         this.books = books;
     }
 

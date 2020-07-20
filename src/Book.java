@@ -15,28 +15,34 @@ public class Book implements Serializable {
 
 
        public String getNameBook() {
+
             return nameBook;
         }
 
         public void setNameBook(String nameBook) {
-           this.nameBook = nameBook;
+
+            this.nameBook = nameBook;
         }
 
 
         public String getNameAuthor() {
+
             return nameAuthor;
         }
 
         public void setNameAuthor(String nameAuthor) {
-        this.nameAuthor = nameAuthor;
+
+            this.nameAuthor = nameAuthor;
         }
 
         public int getBookYear() {
-        return bookYear;
+
+            return bookYear;
         }
 
         public void setBookYear(int bookYear) {
-        this.bookYear = bookYear;
+
+            this.bookYear = bookYear;
         }
 
 
