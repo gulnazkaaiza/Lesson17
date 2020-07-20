@@ -34,9 +34,9 @@ public class ProgramBookList {
 
     public static Book addBook(Scanner sc) {
         System.out.println("Введите название книги");
-        String title = sc.next();
+        String nameBook = sc.next();
         System.out.println("Введите автора книги");
-        String author = sc.next();
+        String nameAuthor = sc.next();
         int bookYear = 0;
         while (true) {
             try {
@@ -47,7 +47,7 @@ public class ProgramBookList {
                 System.out.println("Введен не год, введите год");
             }
         }
-        return new Book(title, author, bookYear);
+        return new Book(nameBook, nameAuthor, bookYear);
     }
 
     private static Library deSerializeLibrary(String libraryFileName) {
