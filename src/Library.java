@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Library implements Serializable {
-    private static final long serialVersionUID = 4978985073481394526L;
+    private static final long serialVersionUID = 1L;
     List<Book> books;
 
     public Library() {
